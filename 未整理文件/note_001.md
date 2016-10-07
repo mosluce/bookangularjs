@@ -51,8 +51,16 @@
 > angular-in-memory-web-api : Demo 用的簡易記憶體資料庫可以移除
 
 1. core-js : 眾多常用的 polyfile (包含了ES6, ES7+, ...)
-2. reflect-metadata : 
-3. rxjs : 
+2. reflect-metadata : (讀文件理解中)
+3. rxjs : (讀文件理解中)
 4. systemjs : 動態加載 npm 的程式庫 (不打包只有在被使用時才載入)解說
 5. zone.js : 被引用到網頁上時，強制對非同步方法進行 Monkey-patched 使所有非同步方法可被監控，主要讓雙向綁定也可以支援非同步方法(如setTimeout, XMLHttpRequest...等) >> [詳細解說](https://github.com/kittencup/angular2-ama-cn/issues/60)
 
+## DevDependencies 部分
+
+> 主要是工具
+
+1. concurrently : 可以同時運行兩個以上 npm 指令 (lite-server + tsc)
+2. lite-server : 簡易的開發用伺服器，會自動重新載入程式 (非 Hot)
+3. typescript : Typescript 編譯器
+4. typings : Typescript 定義檔管理器，可以取得一些本來不是用Typescript撰寫的程式庫 API 定義，最直接的影響就是程式碼自動提示，再來就是IDE及編譯器語法檢查的依據
